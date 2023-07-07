@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Result</title>
+     <style>
+     body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+p {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.prediction-kidney {
+  color: #ff0000; /* Red color for kidney disease */
+}
+
+.prediction-not-kidney {
+  color: #00cc00; /* Green color for not kidney disease */
+}
+</style>
+</head>
+<body>
+     <h1>Result:</h1>
+     <p>{{'Kidney Disease' if prediction == 0 else 'Not Kidney Disease'}}</p>
+</body>
+</html>

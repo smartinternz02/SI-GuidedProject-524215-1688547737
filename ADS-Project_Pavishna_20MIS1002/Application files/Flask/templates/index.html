@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chronic Kidney Disease Prediction</title>
+    <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+</style>
+</head>
+<body>
+    <h1>Chronic Kidney Disease Prediction</h1>
+    <form action="/index" method="POST">
+        <label for="age">Age:</label>
+        <input type="text" name="age" required><br><br>
+        
+        <label for="bp">Blood Pressure:</label>
+        <input type="text" name="bp" required><br><br>
+        
+       <label for="sg">Specific Gravity:</label>
+       <input type="text" name="sg" required><br><br>
+       
+       <label for="al">Albumin:</label>
+       <input type="text" name="al" required><br><br>
+       
+       <label for="su">Sugar:</label>
+       <input type="text" name="su" required><br><br>
+       
+       <label for="rbc">Red Blood Cells:</label>
+       <input type="text" name="rbc" required><br><br>
+       
+       <label for="pc">Pus Cell:</label>
+       <input type="text" name="pc" required><br><br>
+       
+       <label for="pcc">Pus Cell clumps:</label>
+       <input type="text" name="pcc" required><br><br>
+       
+       <label for="ba">Bacteria:</label>
+       <input type="text" name="ba" required><br><br>
+       
+       <label for="bgr">Blood Glucose Random:</label>
+       <input type="text" name="bgr" required><br><br>
+       
+       <label for="bu">Blood Urea:</label>
+       <input type="text" name="bu" required><br><br>
+       
+       <label for="sc">Serum Creatinine:</label>
+       <input type="text" name="sc" required><br><br>
+       
+       <label for="sod">Sodium:</label>
+       <input type="text" name="sod" required><br><br>
+       
+       <label for="pot">Potassium:</label>
+       <input type="text" name="pot" required><br><br>
+       
+       <label for="hemo">Hemoglobin:</label>
+       <input type="text" name="hemo" required><br><br>
+       
+       <label for="pcv">Packed-cell volume</label>
+       <input type="text" name="pcv" required><br><br>
+       
+       <label for="wc">White cells:</label>
+       <input type="text" name="wc" required><br><br>
+       
+       <label for="rc">Red Blood Cell Count:</label>
+       <input type="text" name="rc" required><br><br>
+       
+       <label for="htn">Hypertension:</label>
+       <input type="text" name="htn" required><br><br>
+       
+       <label for="dm">Diabetes mellitus:</label>
+       <input type="text" name="dm" required><br><br>
+       
+       <label for="cad">Coronary artery disease:</label>
+       <input type="text" name="cad" required><br><br>
+       
+       <label for="appet">Appetite:</label>
+       <input type="text" name="appet" required><br><br>
+       
+       <label for="pe">Pedal edema:</label>
+       <input type="text" name="pe" required><br><br>
+       
+       <label for="ane">Anemia:</label>
+       <input type="text" name="ane" required><br><br>
+       
+       
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>

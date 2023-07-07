@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Home</title>
+     <style>
+     img {
+  display: block;
+  margin: 0 auto;
+  width: 1200px;
+  height: 600px; 
+}
+.home-screen {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 38px;
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Project Title */
+h2 {
+  text-align: center;
+  font-size: 34px;
+  color: #333;
+  margin-top: 50px;
+}
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+  </style>     
+</head>
+<body style="background-color: powderblue">
+      <!-- Home Screen -->
+      <div class="home-screen">
+           <h1>Welcome to Our Project</h1>
+           <p>Explore our project and make predictions.</p>
+      </div>
+     <!-- Logo -->
+     <img src="{{ url_for('static', filename='logo.jpg') }}" alt="Logo"  >
+
+     
+
+     <!-- Project Title -->
+     <h2>Early Prediction of Chronic Kidney Disease</h2>
+
+     <!-- Prediction Button -->
+     <a href="/index"><button>Prediction</button></a>
+</body>
+</html>
